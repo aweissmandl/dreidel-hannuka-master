@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreidel</title>
+    <link rel="stylesheet" href="./style.css"></link>
+</head>
+<body>
+    <form id="start-game-form">
+        <input type="text" placeholder="Player 1" id="player-0" value="" />
+        <input type="text" placeholder="Player 2" id="player-1" value=""/>
+        <input type="text" placeholder="Player 3" id="player-2" value=""/>
+        <button type="button" onclick="startGame()">Start</button>
+    </form>
+    
+    <div id="game-board">
+        <table class="padding-wide">
+            <thead>
+                <th>
+                    #
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Balance
+                </th>
+                <th>
+                    Status
+                </th>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="pot-bal" class="padding-wide flex flex-column flex-center">
+            <div class="text-center">
+                <p>The Balance of the pot is:</p>
+                <p id="pot-bal-span" class="text-large text-bold"></p>
+            </div>
+
+            <div>
+                <button 
+                    class="overflow-hidden border-round border-none cursor-pointer hover-shadow padding-4"
+                    onclick="spinDreidel()"
+                    title="Click to spin"
+                >
+                    <img width="56rem" height="56rem" src="./images/spin-button.png"/>
+                </button>
+            </div>
+        </div>
+
+        <div id="drawn-char" class="padding-wide">
+            <img src="" id="char-img" />
+        </div>
+        
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

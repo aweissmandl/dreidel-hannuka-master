@@ -1,0 +1,93 @@
+body, html {
+    width: 100%;
+    font-size: 25px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5rem;
+    text-align: center;
+    min-width: 4rem;
+}
+
+form input {
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#game-board {
+    display: none;
+}
+
+.text-large {
+    font-size: 4rem;
+}
+
+.text-bold {
+    font-weight: bolder;
+}
+
+.padding-wide {
+    padding: 2rem;
+}
+
+.bg-teal {
+    background-color: #19efef;
+}
+
+.bg-gray {
+    background-color: rgb(205, 198, 198);
+}
+
+#pot-bal{
+    display: flex;
+    justify-content: center;
+}
+
+.border-round {
+    border-radius: 50%;
+}
+
+.border-none {    
+    border-width: 0px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hover-shadow:hover {
+    box-shadow: inset 3px 3px gray;
+}
+
+.padding-4 {
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
